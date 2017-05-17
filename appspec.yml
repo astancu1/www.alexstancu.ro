@@ -2,13 +2,11 @@ version: 0.0
 os: linux
 
 files:
-  - source: /currency
-    destination: /var/www/currency
-  - source: /monit/currency.conf
-    destination: /etc/monit/conf.d/
+  - source: /www.alexstancu.ro
+    destination: /var/www/www.alexstancu.ro
 
 permissions:
-  - object: /var/www/currency
+  - object: /var/www/www.alexstancu.ro
     pattern: "**"
     owner: www-data
     group: www-data
@@ -16,7 +14,7 @@ permissions:
     type:
       - file
 
-  - object: /var/www/currency
+  - object: /var/www/www.alexstancu.ro
     pattern: "**"
     owner: www-data
     group: www-data
