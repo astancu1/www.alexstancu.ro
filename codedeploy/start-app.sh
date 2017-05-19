@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # copy env
-cp /usr/share/awsbootstrap/keychain/shared/.env /var/www/currency/
 
 # start nginx
 monit start nginx
@@ -10,7 +9,5 @@ monit start nginx
 systemctl reload monit.service
 
 # start health-check
-monit monitor currency
-monit monitor laravel-queue
 
 exit 0
