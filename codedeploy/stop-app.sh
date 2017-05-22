@@ -3,6 +3,6 @@
 # prevent health-check
 
 # stop nginx
-monit stop nginx
+#monit stop nginx
 
 exit 0
